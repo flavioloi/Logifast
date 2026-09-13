@@ -753,8 +753,9 @@ section {
 }@media (max-width: 700px) {
     .hero .sottotitolo {
         position: relative;
-        top: 40px;
+        top: 0;
         z-index: 1001;
     }
 }
+
     
