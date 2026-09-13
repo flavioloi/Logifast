@@ -26,7 +26,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f7fa;
+    background: #081b34;
     color: #172033;
     line-height: 1.6;
 }
@@ -267,7 +267,7 @@ section h2 {
 }
 
 .card h3 {
-    color: #102a43;
+    color: #ffffff;
     font-size: 23px;
     margin-bottom: 10px;
 }
@@ -283,12 +283,12 @@ section h2 {
 
 #contatti {
     text-align: center;
-    background: #eef3f7;
+    background: #0f172a;
     max-width: none;
 }
 
 #contatti > p:not(.sottotitolo) {
-    color: #53657a;
+color: #ffffff;
     font-size: 18px;
 }
 
@@ -306,13 +306,12 @@ section h2 {
 
     padding: 25px 15px;
 
-    background: white;
+   background: #1f2a3a;
 
     border-radius: 12px;
 
     text-decoration: none;
-    color: #172033;
-
+color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -615,6 +614,7 @@ footer p {
 .servizio-card h3 {
     font-size: 25px;
     margin-bottom: 12px;
+    color: #ffffff;
 }
 
 .servizio-card p {
@@ -709,8 +709,7 @@ footer p {
 }/* ===== SERVIZI - STILE LO.GI.FAST ===== */
 
 #servizi {
-    background: #f1f5f9;
-    color: #102a43;
+background: #0f172a;
     width: 100%;
     max-width: none;
     margin: 0;
@@ -729,11 +728,26 @@ footer p {
 }
 
 #servizi .servizi-introduzione h2 {
-    color: #102a43;
+   color: #ffffff;
     font-size: 48px;
     margin-bottom: 15px;
 }
 
 #servizi .servizi-introduzione > p:last-child {
     color: #5f748c;
+}body {
+    background-color: #0f172a;
+}
+
+section {
+    background-color: #0f172a;
+}#contatti h2 {
+    color: #ffffff !important;
+}.contatto,
+.contatto * {
+    color: #ffffff !important;
+}.card h3 {
+    color: #ffffff !important;
+}#servizi .card h3 {
+    color: #ffffff !important;
 }
