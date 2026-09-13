@@ -1,0 +1,739 @@
+/* ================================
+   RESET
+================================ */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+}
+#home,
+#azienda,
+#servizi,
+#contatti {
+    scroll-margin-top: 180;
+}
+#contatti {
+    scroll-margin-top: 300px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fa;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 31, 54, 0.96);
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+    display: block;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5b942;
+}
+
+
+/* ================================
+   SEZIONI
+================================ */
+
+section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+section h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #102a43;
+}
+
+.sottotitolo {
+    color: #d89418;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+
+/* ================================
+   HOME
+================================ */
+
+.hero {
+    max-width: none;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: left;
+    padding: 140px 7% 100px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 30, 52, 0.88) 0%,
+            rgba(8, 30, 52, 0.55) 45%,
+            rgba(8, 30, 52, 0.20) 100%
+        ),
+        url("hero.jpg") center center / cover no-repeat;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero .sottotitolo {
+    color: #f5b942;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 9vw, 100px);
+    line-height: 1;
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: clamp(24px, 4vw, 38px);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #dbe7f2;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+
+/* ================================
+   BOTTONI
+================================ */
+
+.bottone {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    background: #f5b942;
+    color: #102a43;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.bottone:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(245, 185, 66, 0.3);
+}
+
+.bottone.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.bottone.whatsapp:hover {
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+}
+
+
+/* ================================
+   AZIENDA
+================================ */
+
+#azienda {
+    background: #0f172a;
+}
+
+.sezione-testo {
+    max-width: 800px;
+}
+
+.sezione-testo p:not(.sottotitolo) {
+    color: #53657a;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   SERVIZI
+================================ */
+
+#servizi {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.card {
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 30px rgba(16, 42, 67, 0.08);
+
+    border: 1px solid #e5ebf1;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(16, 42, 67, 0.15);
+}
+
+.icona {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #102a43;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #66788a;
+}
+
+
+/* ================================
+   CONTATTI
+================================ */
+
+#contatti {
+    text-align: center;
+    background: #eef3f7;
+    max-width: none;
+}
+
+#contatti > p:not(.sottotitolo) {
+    color: #53657a;
+    font-size: 18px;
+}
+
+.contatti {
+    max-width: 1000px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.contatto {
+    min-height: 150px;
+
+    padding: 25px 15px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: #172033;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    border: 1px solid #e1e8ef;
+
+    transition: 0.3s;
+}
+
+.contatto:hover {
+    transform: translateY(-5px);
+    border-color: #f5b942;
+    box-shadow: 0 10px 25px rgba(16, 42, 67, 0.1);
+}
+
+.contatto strong {
+    color: #102a43;
+    font-size: 18px;
+}
+
+.contatto span {
+    color: #66788a;
+    word-break: break-word;
+}
+
+.dati-azienda {
+    margin-top: 45px;
+    color: #66788a;
+}
+
+.dati-azienda p {
+    margin: 5px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #081e34;
+    color: #b9c8d6;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+.menu-toggle {
+    display: none;
+}
+@media (max-width: 700px) {
+        .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        flex-direction: column;
+        gap: 0;
+        background: #081e34;
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul.aperto {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 12px 20px;
+    }
+
+    nav {
+        padding: 16px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contatti {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    section h2 {
+        font-size: 34px;
+    }
+
+    .hero {
+        padding-top: 170px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .bottone {
+        text-align: center;
+    }
+
+    .contatti {
+        grid-template-columns: 1fr;
+    }
+}
+/* AZIENDA */
+
+.sezione-azienda {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 110px 20px;
+}
+
+.azienda-testo {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.etichetta {
+    color: #ff8c1a;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.azienda-testo h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.azienda-testo h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ff8c1a;
+}
+
+.azienda-testo > p {
+    color: #cbd5e1;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.azienda-dati {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.azienda-dati div {
+    background: #1e293b;
+    padding: 25px 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.3s;
+}
+
+.azienda-dati div:hover {
+    transform: translateY(-6px);
+    border-color: #ff8c1a;
+}
+
+.azienda-dati strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.azienda-dati span {
+    display: block;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* AZIENDA - MOBILE */
+
+@media (max-width: 700px) {
+
+    .azienda-testo h2 {
+        font-size: 38px;
+    }
+
+    .azienda-testo h3 {
+        font-size: 20px;
+    }
+
+    .azienda-testo > p {
+        font-size: 16px;
+    }
+
+    .azienda-dati {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* SERVIZI */
+
+.servizi-introduzione {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 55px;
+}
+
+.servizi-introduzione h2 {
+    margin-bottom: 15px;
+}
+
+.servizi-introduzione > p:last-child {
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+.servizi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.servizio-card {
+    background: #1e293b;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.3s ease;
+}
+
+.servizio-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff8c1a;
+    box-shadow: 0 15px 35px rgba(255, 140, 26, 0.12);
+}
+
+.servizio-icona {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.servizio-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.servizio-card p {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* SERVIZI - MOBILE */
+
+@media (max-width: 700px) {
+
+    .servizi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servizio-card {
+        padding: 28px;
+    }
+
+    .servizi-introduzione > p:last-child {
+        font-size: 16px;
+    }
+}/* CORREZIONE SEZIONE AZIENDA */
+
+.sezione-azienda {
+    background: #0f172a;
+    color: white;
+}
+
+.azienda-testo h2 {
+    color: white;
+}
+
+.azienda-testo h3 {
+    color: #ff8c1a;
+}
+
+.azienda-testo > p {
+    color: #cbd5e1;
+}
+
+.azienda-dati strong {
+    color: white;
+}
+
+.azienda-dati span {
+    color: #cbd5e1;
+}/* ===== CORREZIONE DEFINITIVA AZIENDA ===== */
+
+#azienda {
+    background-color: #0f172a !important;
+    color: white !important;
+}
+
+#azienda .azienda-testo h2 {
+    color: white !important;
+}
+
+#azienda .azienda-testo h3 {
+    color: #ff8c1a !important;
+}
+
+#azienda .azienda-testo > p {
+    color: #cbd5e1 !important;
+}
+
+#azienda .azienda-dati div {
+    background-color: #1e293b !important;
+}
+
+#azienda .azienda-dati strong {
+    color: white !important;
+}
+
+#azienda .azienda-dati span {
+    color: #cbd5e1 !important;
+}/* ===== AZIENDA A TUTTA LARGHEZZA ===== */
+
+#azienda {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 120px 20px;
+    scroll-margin-top: 300px;
+}
+
+#azienda .azienda-testo {
+    max-width: 850px;
+    margin: 0 auto;
+}/* ===== SERVIZI - STILE LO.GI.FAST ===== */
+
+#servizi {
+    background: #f1f5f9;
+    color: #102a43;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 120px 20px;
+    scroll-margin-top: 190px;
+}
+
+#servizi .servizi-introduzione {
+    max-width: 750px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+#servizi .etichetta {
+    color: #f5b942;
+}
+
+#servizi .servizi-introduzione h2 {
+    color: #102a43;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+#servizi .servizi-introduzione > p:last-child {
+    color: #5f748c;
+}
